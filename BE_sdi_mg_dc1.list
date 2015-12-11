@@ -1,0 +1,3 @@
+cd /u01/shared/wls/Oracle_SDI1/sdictl/;java Test slcn06sn-nas 215;The local host is slcn06vmb0021.us.oracle.com
+cd /u01/shared/wls/Oracle_SDI1/sdictl/;java Test slcn06sn01 215;The local host is slcn06vmf0021.us.oracle.com
+cd /u01/shared/wls/Oracle_SDI1/sdictl/;java Test slcn06sn02 215;The local host is slcn06vmf0021.us.oracle.com

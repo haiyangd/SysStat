@@ -1,0 +1,1 @@
+cd /home/oracle/jdk1.7.0_80;export CLASSPATH=/home/oracle/jdk1.7.0_80;bin/java Test slce27sn-nas 215;The local host is slce27vmb6011.us.oracle.com
