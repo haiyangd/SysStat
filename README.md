@@ -1,7 +1,8 @@
 How to maintain syscheck_daemon How to maintain syscheck_daemon syscheck_daemon
 For Monitoring Multiple SDI Linux servers (Network /Uptime/Current CPU /Average Daily CPU /Total Processes /Ram + Swap/Processes Check /SDI Status) from a single machine , implemented as a daemon 
 steps to configure (recommended to run these as sudo or root)
-* Update User and hostnames (U can add multiple hosts && after installation configuration is picked up from under /opt/SysStat/r_systat.config)
+
+1 Update User and hostnames (U can add multiple hosts && after installation configuration is picked up from under /opt/SysStat/r_systat.config)
 r_systat.config
 export Q_HOST="slcn06vmf0021.us.oracle.com slce27vmf6011.us.oracle.com"
 #List Of hosts to be monitored
@@ -24,20 +25,20 @@ export TOLIST="c9qa_sdi_ww_grp@oracle.com"
 export FROM="haiyang.dong@oracle.com"
 export SUB="Status of SDI Servers"
 
-* for same user and host/s run nopswd_con.sh
+2. for same user and host/s run nopswd_con.sh
 to add remote ssh keys to configure all slaves for monitoring daemon , passwordless ssh
 #sh nopswd_con.sh slcn06vmf0021.us.oracle.com root
 * Now run configure_systat.sh to create monitoring daemon "r_systat" and manage it by
 used "rsys_dmn" service.
 ./configure_systat.sh
 
-* finally run 
+3.  finally run 
 to launch daemon 
 sudo service rsys_dmn start 
 to Stop 
 sudo service rsys_dmn stop
 
-* Check logs in 
+4. Check logs in 
 /tmp/lock/subsys/logs/sysRun.log
-* Also it generates mailer under, mostly if there are no issues then it wont have any content , but u can use it to send mails 
+5. Also it generates mailer under, mostly if there are no issues then it wont have any content , but u can use it to send mails 
 /tmp/info.html
