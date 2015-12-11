@@ -30,4 +30,4 @@ steps to configure (recommended to run these as sudo or root)
 	/tmp/info.html 
 
 
-Also please go ahead if u have any improvements , let me know about em 
+
