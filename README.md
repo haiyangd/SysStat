@@ -1,5 +1,4 @@
 How to maintain syscheck_daemon How to maintain syscheck_daemon syscheck_daemon
-===============
 For Monitoring Multiple SDI Linux servers (Network /Uptime/Current CPU /Average Daily CPU /Total Processes /Ram + Swap/Processes Check /SDI Status) from a single machine , implemented as a daemon 
 steps to configure (recommended to run these as sudo or root)
 * Update User and hostnames (U can add multiple hosts && after installation configuration is picked up from under /opt/SysStat/r_systat.config)
